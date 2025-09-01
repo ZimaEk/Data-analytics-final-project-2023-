@@ -1,11 +1,67 @@
-# Data-analytics-final-project-2023
-Credit project for professional retraining at the Digital departments of Tomsk State University in the field of Data Analytics
+# Анализ рынка труда гуманитарных специалистов в России
 
-Project title: Assessment of the labor market of humanitarian specialists in Russia. The customer's business goal is to understand which specialists are most in demand in the market, and what qualification parameters are required for them. The object of research: the market of humanitarian specialties in 2023. Research subject: industry requirements and working conditions. The study is to analyze and identify the qualification requirements and working conditions in the market (by industry) for humanitarian specialists
+## Описание проекта
 
-Design of the study
+Проект посвящен анализу рынка труда гуманитарных специальностей в России. Цель исследования — выявить наиболее востребованные направления, уровень заработных плат и ключевые навыки, требуемые от соискателей.
 
-1. Data collection: link generation by destination and job parsing
-2. Data processing: data purification, exclusion of zero values, removal of outliers
-3. Statistical data analysis: hypothesizing, testing the sample for normality, applying statistical criteria to test the hypothesis
-4. Interpretation and design of the analysis results: visualization of the results obtained
+## Цели исследования
+
+- Определить, какие гуманитарные отрасли наиболее востребованы на рынке труда.
+- Проанализировать уровень доходов специалистов в разных областях.
+- Выявить ключевые навыки, требуемые работодателями.
+
+## Данные
+
+Данные были собраны с сайта HeadHunter (hh.ru) 6 мая 2023 года.  
+Проанализировано **1401 вакансия** по следующим направлениям:
+- Философия
+- Политология
+- Психология
+- Филология
+- Лингвистика
+- Искусствоведение
+- Реклама
+- и др.
+
+## Методы анализа
+
+1. **Парсинг данных**: с использованием библиотеки BeautifulSoup (Python).
+2. **Очистка данных**: удаление нулевых значений и выбросов.
+3. **Статистический анализ**:
+   - Проверка гипотезы о различии средних доходов с помощью критерия Краскела-Уоллиса.
+   - Сравнение медианных показателей.
+4. **Визуализация результатов**: построение графиков и дашбордов.
+
+## Ключевые результаты
+
+### Топ-3 направления по уровню дохода:
+1. Редактирование
+2. Международные отношения
+3. Реклама
+
+### Средние доходы по направлениям:
+- Редактирование: 60 тыс. руб.
+- Международные отношения: 60 тыс. руб.
+- Реклама: 60 тыс. руб.
+- Журналистика: 59 тыс. руб.
+- Документоведение: 53 тыс. руб.
+
+### Ключевые навыки:
+Для каждого направления выделены топ-10 навыков (например, грамотная речь, написание текстов, креативность, работа в команде).
+
+## Используемые технологии
+
+- Python
+- BeautifulSoup
+- Pandas
+- SciPy
+- Matplotlib / Seaborn
+
+## Автор
+
+Зима Екатерина Игоревна  
+zimakate2002107@gmail.com
+
+## Лицензия
+
+Проект выполнен в учебных целях. Данные принадлежат HeadHunter Russia.
